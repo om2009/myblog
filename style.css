@@ -6,7 +6,6 @@ body{
 h1{
     font-family: serif;
     font-size: 30px;
-    text-align: center;
 }
 h2{
     font-family: cursive;
@@ -22,6 +21,10 @@ h2{
 }
 .link:hover{
     background-color: white;
+    font-size: 20px;
+}
+.link{
+    padding: 5px;
 }
 .sp{
     padding: 20px
@@ -31,4 +34,10 @@ p{
 }
 #about{
     background-color: wheat;
+}
+#review{
+    background-color: wheat;
+}
+#home{
+    background-color: wheat; 
 }
