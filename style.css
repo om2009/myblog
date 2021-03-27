@@ -6,6 +6,7 @@ body{
 h1{
     font-family: serif;
     font-size: 30px;
+    text-align: center;
 }
 h2{
     font-family: cursive;
@@ -29,11 +30,5 @@ p{
     font-size: 20px;
 }
 #about{
-    background-color: wheat;
-}
-#review{
-    background-color: wheat;
-}
-#home{
     background-color: wheat;
 }
