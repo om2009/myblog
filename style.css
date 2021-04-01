@@ -41,3 +41,12 @@ p{
 #home{
     background-color: wheat; 
 }
+img{
+    transition: transform .2s;
+}
+img:hover{
+    transform: scale(0.9);
+}
+#inspiration{
+    background-color: wheat; 
+}
