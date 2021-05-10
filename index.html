@@ -1,57 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-<body>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <title>School website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
 
-<div class="container">
-
-    <section id="app">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AmAIOlod-80aGvVFcBdbfjebPGUlVaYjI8ECZcJtZks/embed"></iframe>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/U9AQsuLnTixFr5caYUBM9qmkuaPCvmuWblFMcUPrC14/embed"></iframe>
-    </section>
-
-<!--
-Start your code from here
--->
-    <h2>Click on the game to play</h2>
-    <h5>These game are build in game lab</h5>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-    <div class="item active">
-        <center>
-            <a href="" target="_blank">
-                <img src="Car_game.png" class="img-responsive">
-            </a>
-            <div class="carousel-content">
-                <p>Car_game</p>
-            </div>
-            
-        </center>
-
-</div>
-            <div class="item">
-                <center>
-                  <a href="" target="_blank">
-                <img src="Winne_Pooh.png" class="img-responsive">
-            </a>
-            <div class="carousel-content">
-                <p>Winne_pooh</p>
-                    </div>
-                </center>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Mt St Ann High School</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
     </div>
 
-</body>
+</nav>
+        <section id="home">
+            <marquee id="marqueestyle" onmouseover="this.stop();" onmouseout="this.start();">
+                *** Feel free to ask queries on school@gmail.com ***
+            </marquee>
+            <h1 class="text-capitalize">home</h1>
+            <br>
+            <br>
+            <img src="https://images.uniapply.com/uploads/college/image/logo/4694/Mount_St_Ann_High_School_2226_Logo_1.jpg" width="200" height="200">
+            <h2 class="text-capitalize">mt st ann high school</h2>
+        </section>
+        <br>
+        <section id="video">
+            <h1 class="text-capitalize">video</h1>
+            <br>
+        <iframe id="video" src="https://www.youtube.com/embed/4Pxm8m7jTR4" title="school video" width="1500" height="700"></iframe>
+        </section>
+        <br>
+        <section id="about">
+            <h1 class="text-capitalize">about us</h1>
+            <br>
+            <p class="text-muted text-center">Mount St. Ann High School is an English Medium School Founded in 1981 and named after St. Ann who is a great Saint and Patroness of educators. The School which is recognized by the Government of Maharashtra and affiliated to ‘Central Board of Secondary Education is owned by the Society of Sisters of St. Ann, Province of North India and managed by St. Ann’s Convent, Talegaon Dabhade which belongs to the Christian religious minority group. The Congregation of the Sisters of St. Ann to which the sisters belong is a Christian Religious order founded by the pious couple of Turin (Italy) Carlo Tancredi di Barolo and Giulia Falletti Di Barolo in 1834. Active in the field of education throughout the world since its origin, the Congregation runs in India many Schools, Colleges and various types of training colleges in which thousands of young people, belonging to every social class, community and linguistic group are being educated through the medium of both English and Regional languages.</p>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="page-header col-sm-12 col-xs-12 col-md-12 col-lg-12" >
+                    <h1 class="text-capitalize">contact us</h1>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14724.574391754386!2d75.8597763!3d22.6856977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x201b98f637c259bd!2sWhiteHat%20Codes%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1620649952876!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h3>SR. SHAREENA PINTO</h3>
+                    <div class="contact_1">
+                        <a href="#">
+                            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;school@gmail.com</h5>
+                        </a>
+                        <a href="#">
+                            <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;schoolId</h5>
+                        </a>
+                        <a href="#">
+                            <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;9916001600</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
