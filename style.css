@@ -3,3 +3,31 @@ body{
     background-color: white;
     color: black;
 }
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.main_div{
+    float: left;
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    width: 33.33%;
+}
+#achievementsID{
+    padding-bottom: 10px;
+}
+.movie_head{
+    padding: 6px 22px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+.movie_head i{
+    float: right;
+    color: white;
+}
