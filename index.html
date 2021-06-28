@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONSOLE WEB APP</title>
+    <title> FAMILY BOOK</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CONSOLE WEB APP</h1>
+    <h1> FAMILY BOOK</h1>
     <br>
     <br>
-    <h2>Visual Studio Code</h2>
-    <br>
-    <br>
-    <p>Visual Studio Code is a source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.<a href="https://en.wikipedia.org/wiki/Visual_Studio_Code">view more</a> </p>
+    <img id="img" src="">
+    <h4 id="name"></h4>
+    <button type="button" onclick="bt()">Next</button>
     <script>
-        var first_name = "Om";
-        console.log(first_name);
-        var last_name = "Kakade";
-        console.log(last_name);
-        var full_name = first_name.concat(last_name);
-        console.log(full_name);
-        var a = 7;
-        console.log(a);
-        var b = 7;
-        console.log(b);
-        var add = a + b;
-        console.log(add);
+        var img = ["https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg", "https://i.pinimg.com/736x/1c/ea/5d/1cea5d55bc602340d9828422c3845815.jpg", "https://www.seekpng.com/png/detail/270-2703114_questionnaire-for-smart-mom-cartoon.png", "https://img2.pngio.com/father-png-clipart-arm-art-boy-cartoon-child-free-png-download-father-cartoon-png-728_796.jpg"];
+        var name = [
+        "om kakade", "vrushali kakade and shravani kakade", "mangal kakade", "kiran kakade"];
+        var i = 0;
+        function bt()
+        {
+            document.getElementById ("img").src = img[i];
+            document.getElementById ("name").innerHTML = name[i];
+            console.log(name[i]);
+            i++;
+            if (i>3)
+            {
+                i = 0;
+            }
+        }
     </script>
 </body>
 </html>
