@@ -1,40 +1,34 @@
-menu_list_array = ["Veg Margherita Pizza", 
-                   "chicken pizza", 
-                   "chocalate pizza", 
-                   "paneer pizza"];
-
-function getmenu(){
-var htmldata;
-//Complete the code
-htmldata = "<ol class='menu_list'>"
-menu_list_array.sort
-for (var k=0; k<menu_list_array.length; k++)
+var guest_list = [];
+var guest_list1 = [];
+function submit()
 {
-    htmldata = htmldata + '<li>' + menu_list_array[k] + '</li>';
+    var input = document.getElementById("input_1").value;
+    guest_list.push(input, "<br>");
+    guest_list1.push(input);
+    document.getElementById("submit_div").innerHTML = guest_list1;
 }
-htmldata = htmldata + "</ol>"
-document.getElementById("display_menu").innerHTML = htmldata;
-}
-
-function add_item(){
-var htmldata;
-var item=document.getElementById("add_item").value;
-//Complete the code
-htmldata = "<section class='cards'>"
-menu_list_array.sort
-for (var k=0; k<menu_list_array.length; k++)
+function show()
 {
-    htmldata = htmldata + "<div class='cards'>" + '<img class="img" src= "pizzaImg.png"/>' + menu_list_array[k] + "</div>";
+    var remove_commas = guest_list.join(" ");
+    console.log(remove_commas);
+    document.getElementById("show_text").innerHTML = remove_commas;
 }
-htmldata = htmldata + "</section>"
-document.getElementById("display_addedmenu").innerHTML = htmldata;
-
+function sort()
+{
+    guest_list1.sort()
+    document.getElementById("srot_text").innerHTML = guest_list1;
 }
 
-function add_top(){
-//Complete the code
-var item=document.getElementById("add_item").value;
-menu_list_array.push(item);
-add_item();
-document.getElementById("add_item").value = " ";
+function search()
+{
+    var s = document.getElementById("input_shearch").value;
+    var found = 0;
+    for(var j = 0; j<guest_list.length; j++)
+    {
+        if (s==guest_list[j])
+        {
+            found = found+1;
+        }
+    }
+    document.getElementById("search_div").innerHTML = "Name Found" + " " + found + " " + "time's";
 }

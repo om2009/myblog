@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FAMILY BOOK</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1> FAMILY BOOK</h1>
+    <script src="main.js"></script>
+    <h1>GUEST LIST</h1>
+    <br>
+    <span>
+    <input id="input_1">
+    </span>
+    <span>
+        <button onclick="submit()">submit</button>
+    </span>
+    <div id="submit_div"></div>
     <br>
     <br>
-    <img id="img" src="">
-    <h4 id="name"></h4>
-    <button type="button" onclick="bt()">Next</button>
-    <script>
-        var img = ["https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg", "https://i.pinimg.com/736x/1c/ea/5d/1cea5d55bc602340d9828422c3845815.jpg", "https://www.seekpng.com/png/detail/270-2703114_questionnaire-for-smart-mom-cartoon.png", "https://img2.pngio.com/father-png-clipart-arm-art-boy-cartoon-child-free-png-download-father-cartoon-png-728_796.jpg"];
-        var name = [
-        "om kakade", "vrushali kakade and shravani kakade", "mangal kakade", "kiran kakade"];
-        var i=0;
-        function bt()
-        {
-            var update_img = img[i]
-            var update_name = name[i]
-            document.getElementById ("img").src = update_img;
-            document.getElementById ("name").innerHTML = update_name;
-            console.log(name[i]);
-            i++;
-            if (i>3)
-            {
-                i = 0;
-            }
-        }
-    </script>
+    <hr>
+    <br>
+    <br>
+    <h1>GUEST LIST</h1>
+    <br>
+    <button onclick="show()">show</button>
+    <div id="show_text"></div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1>GUEST LIST</h1>
+    <br>
+    <button onclick="sort()">sort</button>
+    <div id="srot_text"></div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <span>
+        <input id="input_shearch">
+        </span>
+        <span>
+            <button onclick="search()">search</button>
+        </span>
+        <div id="search_div"></div>
 </body>
 </html>
