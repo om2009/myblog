@@ -4,34 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> FAMILY BOOK</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> FAMILY BOOK</h1>
-    <br>
-    <br>
-    <img id="img" src="">
-    <h4 id="name"></h4>
-    <button type="button" onclick="bt()">Next</button>
-    <script>
-        var img_1 = ["https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg", "https://i.pinimg.com/736x/1c/ea/5d/1cea5d55bc602340d9828422c3845815.jpg", "https://www.seekpng.com/png/detail/270-2703114_questionnaire-for-smart-mom-cartoon.png", "https://img2.pngio.com/father-png-clipart-arm-art-boy-cartoon-child-free-png-download-father-cartoon-png-728_796.jpg"];
-        var names = [
-        "om kakade", "vrushali kakade and shravani kakade", "mangal kakade", "kiran kakade"];
-        var i=0;
-        function bt()
-        {
-            var update_img = img_1[i];
-            var update_name = names[i];
-            document.getElementById ("img").src = update_img;
-            document.getElementById ("name").innerHTML = update_name;
-            console.log(names[i]);
-            i++;
-            if (i>3)
-            {
-                i = 0;
-            }
-        }
-    </script>
+    <script src="main.js"></script>
+    <h1>Canvas</h1>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
 </body>
 </html>
