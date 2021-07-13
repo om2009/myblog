@@ -8,6 +8,18 @@ function my_mousedown(e)
     color = document.getElementById("color").value;
     width_of_line = document.getElementById("width_of_line").value;
     radius = document.getElementById("radius").value;
+    if(color == "")
+    {
+        document.getElementById("waring").innerHTML = "enter color";
+    }
+    if(color == "")
+    {
+        document.getElementById("waring2").innerHTML = "enter width of line";
+    }
+    if(radius == "")
+    {
+        document.getElementById("waring3").innerHTML = "enter radius";
+    }
     mouseEvent = "mouseDown";
 }
 
