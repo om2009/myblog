@@ -10,3 +10,7 @@ body{
 	background-color: white;
 	border-style: ridge;
 }
+h1{
+	color: red;
+	font-size: 40px;
+}
