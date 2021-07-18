@@ -7,7 +7,6 @@ function my_mousedown(e)
 {
     color = document.getElementById("color").value;
     width_of_line = document.getElementById("width_of_line").value;
-    radius = document.getElementById("radius").value;
     if(color == "")
     {
         document.getElementById("waring").innerHTML = "enter color";
@@ -15,10 +14,6 @@ function my_mousedown(e)
     if(color == "")
     {
         document.getElementById("waring2").innerHTML = "enter width of line";
-    }
-    if(radius == "")
-    {
-        document.getElementById("waring3").innerHTML = "enter radius";
     }
     mouseEvent = "mouseDown";
 }
@@ -37,7 +32,7 @@ function my_mousemove(e)
         ctx.strokeStyle = color;
         ctx.lineWidth = width_of_line;
         ctx.moveTo(last_position_of_x, last_position_of_y);
-        ctx.lineTo(current_position_of_mouse_x, current_position_of_mouse_y);
+        ctx.arc(current_position_of_mouse_x, current_position_of_mouse_y, 20, 0, 2 * Math.PI);
         ctx.stroke();
     }
     last_position_of_x = current_position_of_mouse_x;
@@ -50,8 +45,8 @@ canvas.addEventListener("touchstart", my_touchstart);
     function my_touchstart(e)
     {
         console.log("my_touchstart");
-        last_position_of_x = e.touches[0].clientX - canvas.offsetLeft;
-        last_position_of_y = e.touches[0].clientY - canvas.offsetTop;
+        last_position_of_touch_x = e.touches[0].clientX - canvas.offsetLeft;
+        last_position_of_touch_y = e.touches[0].clientY - canvas.offsetTop;
 
     }
 
@@ -71,16 +66,16 @@ function my_touchmove(e)
 
     console.log("Last position of x and y coordinates = ");
     console.log("x = " + last_position_of_x + "y = " + last_position_of_y);
-    ctx.moveTo(last_position_of_x, last_position_of_y);
+    ctx.moveTo(last_position_of_touch_x, last_position_of_touch_y);
 
     console.log("Current position of x and y coordinates = ");
     console.log("x  = " + current_positoion_of_touch_x + "y = " + current_positoion_of_touch_y);
-    ctx.lineTo(current_positoion_of_touch_x, current_positoion_of_touch_y);
+    ctx.arc(current_positoion_of_touch_x, current_positoion_of_touch_y, 20, 0, 2 * Math.PI);
     ctx.stroke();
 
 
-    last_position_of_x = current_positoion_of_touch_x; 
-    last_position_of_y = current_positoion_of_touch_y;
+    last_position_of_touch_x = current_positoion_of_touch_x; 
+    last_position_of_touch_y = current_positoion_of_touch_y;
 
 }
 canvas.addEventListener("mouseup", my_mouseup);
