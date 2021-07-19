@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body{
 
-<title>C81</title>
-<link rel="stylesheet" type="text/css" href="C81style.css">
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    margin-top: 10px;
+	border-width:40px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	
+	color:red!important;
+	
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>ASCII value</title>
 </head>
-<body class="body_backgorund">
+<body>
 
 <center>
-	<h1>My First Canvas</h1>\
-	<span>
-	<p id="waring"></p>
-	</span>
-	<span>
-		<p id="waring2"></p>
-		</span>
-		<span>
-			<p id="waring3"></p>
-			</span>
-	<canvas id="myCanvas" width="800" height="600"></canvas>
-	<br>
-	<span>
-		Color - 
-	</span>
-	<input type="text" id="color">
-	<span>
-		width of the line  -
-	</span>
-	<input type="text" id="width_of_line">
-	<button type="button" onclick="clearArea();">Clear</button>
+<h1>Keyboard keys</h1>
+	<!--- Create Canvas element --->
+	<canvas height="300" width="500" id="myCanvas"></canvas>
+	<div id="d1"></div>
+<h4>
+	<b class="text-danger">NOTE : </b> PRESS ANY KEYBOARD KEY 
+</h4>
+
 </center>
-
-
-<script src="C81main.js"></script>
+<script src="main.js">
+</script>
 </body>
 </html>
