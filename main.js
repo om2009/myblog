@@ -20,6 +20,34 @@ function uploadimg() {
 
 	ctx.drawImage(img_imgTag, img_x, img_y, img_width, img_height);
 }
+function aplhabetkey()
+{
+	//upload respective image with the message.
+	img_image = "Alpkey.png";
+	add(); 
+
+}
+function numberkey()
+{
+	img_image = "numkey.png";
+	add();	
+}
+function arrowkey()
+{
+	img_image = "Arrkey.png";
+	add();
+}
+function specialkey()
+{
+	img_image = "spkey.png";
+	add();
+	
+}
+function otherkey()
+{
+	img_image="otherkey.png";
+	add();
+}
 
 //Write a code to grab the key-pressed event
 window.addEventListener("keydown", my_keydown);
@@ -49,7 +77,7 @@ function my_keydown(e)
 		}
 		if ((keyPressed == '17' && keyPressed == '18' && keyPressed == '27'))
 		{
-			specialkey()
+			specialkey();
 			console.log("special key");
 			document.getElementById("d1").innerHTML = "you have preesed special key";
 		}
@@ -61,37 +89,4 @@ function my_keydown(e)
 	}
 }
 
-function aplhabetkey()
-{
-	//upload respective image with the message.
-	img_image = "Alpkey.png";
-	add(); 
-	uploadimg()
 
-}
-function numberkey()
-{
-	img_image = "numkey.png";
-	add();	
-	uploadimg()
-}
-function arrowkey()
-{
-	img_image = "Arrkey.png";
-	add();
-	uploadimg()
-}
-function specialkey()
-{
-	img_image = "spkey.png";
-	add();
-	uploadimg()
-	
-}
-function otherkey()
-{
-	img_image="otherkey.png";
-	add();
-	uploadimg()
-}
-	
