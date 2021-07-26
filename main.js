@@ -63,19 +63,19 @@ function my_keydown(e)
 			console.log("aplhabet key");
 			document.getElementById("d1").innerHTML = "you have preesed aplhabet key";
 		}
-		if (keyPressed >= '48' && keyPressed<='57')
+		else if (keyPressed >= '48' && keyPressed<='57')
 		{
 			numberkey();
 			console.log("number key");
 			document.getElementById("d1").innerHTML = "you have preesed number key";
 		}
-		if (keyPressed >= '37' && keyPressed<='40')
+		else if (keyPressed >= '37' && keyPressed<='40')
 		{
 			arrowkey();
 			console.log("arrow key");
 			document.getElementById("d1").innerHTML = "you have preesed arrow key";
 		}
-		if ((keyPressed == '17' && keyPressed == '18' && keyPressed == '27'))
+		else if ((keyPressed == '17' ) && (keyPressed == '18') && (keyPressed == '27'))
 		{
 			specialkey();
 			console.log("special key");
