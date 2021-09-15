@@ -1,43 +1,32 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>log in</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header class="header">
-        <br>
-        <br>
-		<h1 class="color">Math Quiz</h1>
-        <h4 class="color">Log in</h4>
-    </header>
-	<center>
-		<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-			<h3>Player 1 Login for the game</h3>
-			<label>User Name : </label>
-			<input type="text" id="player1_name_input" class="form-control" placeholder="Player 1 Name">
-			<br>
-		</div>
-	<br>
-	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
-		<h3>Player 2 Login for the game</h3>
-		<label>User Name : </label>
-		<input type="text" id="player2_name_input" class="form-control" placeholder="Player 2 Name">
-		<br>
-	</div>
-	<br>
-
-	<button  class="button" onclick="addUser()">Log in</button> 
-
-	
-	</center>
-	<script src="main.js"></script>
+    <h1 class="header ">	
+        Pizza<sup>
+    <img class="logo" src="pizza.webp">
+    </sup>
+</h1>
+<br>
+<br>
+<br>
+<div id="main">
+<h1 style="font-size: 50px;">Sign in </h1>
+<h4>User Name</h4>
+<input class="in" id="user_name" placeholder="User name">
+<h4>User address</h4>
+<input class="in" id="user_ad" placeholder="User address">
+<br>
+<button id="sign_in" onclick="add_user();">Sign in</button>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
