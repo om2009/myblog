@@ -1,8 +1,25 @@
-function add_user()
+Webcam.set({
+    width : 330,
+    heigth : 300,
+    image_format : 'png',
+    png_quality : 90
+});
+
+camera = document.getElementById("camera");
+Webcam.attach('#camera');
+
+
+
+
+function take_snapshot()
 {
-    user_name = document.getElementById("user_name").value;
-    localStorage.setItem("user_name", user_name)
-    user_ad = document.getElementById("user_ad").value;
-    localStorage.setItem("user_ad", user_ad)
-    window.location = "menu.html";
+    Webcam.snap(function (data_uri){
+        document.getElementById("result").innerHTML = '<img id="captured_image" src="'+data_uri+'"/>';
+    });
 }
+
+
+console.log('ml5 version :', ml5.version);
+
+classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/60IiwZU9l/',modelLoaded);
+

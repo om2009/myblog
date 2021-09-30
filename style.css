@@ -15,7 +15,7 @@ hr{
     border-top: 1px solid #eee;
     width: 700px;
 }
-.object{
+.object, #result_object_name,#result_objrct_accuracy{
     font-family: monospace;
     font-size: 15px;
 }
