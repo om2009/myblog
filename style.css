@@ -1,27 +1,43 @@
-body{
-    text-align: center;
-    color: white;
-    background-color: pink;
+body{ 
+    background: lightblue;
+    color: rgb(62, 167, 202);
+    font-family: 'Roboto Slab', serif, cursive;
+}
+
+.header_div{
+    background: rgb(207, 243, 255);
+    color: rgb(62, 167, 202);
 
 }
-.h1_h{
-    font-size: 25px;
-    font-family: monospace;
+
+.header_div p{
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+
 }
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
-    width: 700px;
+
+.main_div button{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    width: 130px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+
 }
-.object, #result_object_name,#result_objrct_accuracy{
-    font-family: monospace;
-    font-size: 15px;
-}
-#camera{
-    border: 2px dashed black;
-    width: 350px;
-    height: 300px;
+
+.copy_right_footer{
+    position: fixed;
+    color: rgb(62, 167, 202);
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background: rgb(207, 243, 255);
+    line-height: 2;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(40, 155, 194);
+
 
 }
