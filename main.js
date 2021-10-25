@@ -6,7 +6,8 @@ function preload(){
 function setup(){
     canvas = createCanvas(400, 350);
     canvas.center();
-    video = createCapture(300, 300);
+    video = createCapture(VIDEO);
+    video.size(300, 300);
     video.hide()
     poseNet = ml5.poseNet(video, modeLoded);
     poseNet.on('pose', gotPose);
@@ -18,7 +19,7 @@ function modeLoded()
 }
 
 function gotPose(result){
-    if(result.lenght >0)
+    if(result.length >0)
     {
         console.log(result);
         console.log("nose X = " + result[0].pose.nose.x);
