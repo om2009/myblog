@@ -1,29 +1,27 @@
 body{
-    background-size: cover;
-    text-align: center;
-    background-position: center;
+    
+    text-align:  center;
+    background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-
-
-
-.heading
-{
-font-size: 23px;
-width: 100%;
-margin: 0px;
+.heading{
+    width: 100%;
+    font-size: 25px;
+    margin: 0px;
 }
-
-#status, #number_of_objects
-{
-font-size: 18px;
+#number_of_object, #status{
+    font-size: 15px;
+    
 }
-
-
 
 
 canvas{
-    box-shadow: 10px 10px 10px gray;
-    border-radius: 15px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px 15px  lightblue;
     margin-top: 30px;
+    border: 2px solid whitesmoke;
 }
 
