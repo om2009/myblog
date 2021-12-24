@@ -1,10 +1,7 @@
 body{
     
     text-align:  center;
-    background: #CC95C0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-size: cover;
 }
 .heading{
     width: 100%;
@@ -16,11 +13,19 @@ background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+
     
 }
 
-
+.copyright_footer{
+    position: fixed;
+    bottom: 0;
+    line-height: 3;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    background-color: whitesmoke;
+}
 canvas{
     border-radius: 20px;
     background-color: whitesmoke;
-    box-shadow: 5px 5px 20px 15px  lightblue;
+    box-shadow: 5px 5px 5px 5px  whitesmoke;
     margin-top: 30px;
     border: 2px solid whitesmoke;
 }
