@@ -1,32 +1,16 @@
-body{
-    
-    text-align:  center;
-    background-size: cover;
+body
+{
+    text-align: center;
 }
 .heading{
     width: 100%;
-    font-size: 25px;
-    margin: 0px;
+    text-align: left;
 }
-#number_of_object, #status{
-    font-size: 15px;
+.heading button{
+    float: right;
     
 }
-
-.copyright_footer{
-    position: fixed;
-    bottom: 0;
-    line-height: 3;
-    width: 100%;
-    text-align: center;
-    color: gray;
-    background-color: whitesmoke;
+.heading h3{
+    
+    display: inline;
 }
-canvas{
-    border-radius: 20px;
-    background-color: whitesmoke;
-    box-shadow: 5px 5px 5px 5px  whitesmoke;
-    margin-top: 30px;
-    border: 2px solid whitesmoke;
-}
-
