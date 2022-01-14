@@ -1,31 +1,52 @@
-body
-{
+body{
     text-align: center;
-    font-family: monospace;
+    background-size: cover;
+
 }
+
 .heading{
+    font-size: 18px;
+    color: white;
     width: 100%;
-    text-align: left;
+    margin: 0px;
 }
-.heading button{
-    float: right;
-    
+.head{
+    text-shadow: 3px 3px rgb(0, 0, 0);
 }
-.heading h3{
-    
-    display: inline;
+.note{
+    font-size: 12px;
+    color: black;
+
 }
-.item{
+.div_speed{
+    float: left;
+}
+.div_speed_img{
+    width: 200px;
+    border-radius: 100px;
+}
+#speed{
     font-size: 20px;
-    font-family: monospace;
-    
+    margin: 15px;
 }
-.modal-dialog{
-    width: 90%;
+.div_volume{
+    float: right;
 }
-canvas 
-  {
-      border:3px solid blue;
-      border-radius: 20px;
-      
-  }
+.div_volume_img{
+    width: 200px;
+    border-radius: 100px;
+}
+#volume{
+    font-size: 20px;
+    margin: 15px;
+}
+.play_button{
+    width: 150px;
+    font-size: 25px;
+}
+canvas{
+    margin-top: 7px;
+    border: 7px solid black;
+    border-radius:20px;
+    background-color: white;
+}
